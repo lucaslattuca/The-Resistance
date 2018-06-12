@@ -6,7 +6,7 @@ import random
 from os import path
 from pygame.locals import *
 
-## assets folder
+##carpeta de assets y sonidos
 img_dir = path.join(path.dirname(__file__), 'assets')
 sound_folder = path.join(path.dirname(__file__), 'sounds')
 
@@ -185,7 +185,7 @@ class Player(pygame.sprite.Sprite):             ## configuracion de la nave y la
         pygame.sprite.Sprite.__init__(self)
 
         ## tamaño de la nave en el juego
-        self.image = pygame.transform.scale(player_img, (60, 50))  ##50,38
+        self.image = pygame.transform.scale(player_img, (70, 60))  ##50,38
         self.image.set_colorkey(BLACK)
         self.rect = self.image.get_rect()
         self.radius = 20
